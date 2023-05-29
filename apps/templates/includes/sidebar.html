@@ -1,0 +1,72 @@
+
+    <div class="sidebar">
+        <!--
+          Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red"
+      -->
+        <div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="javascript:void(0)" class="simple-text logo-mini">
+                    HFE
+                </a>
+                <a href="javascript:void(0)" class="simple-text logo-normal">
+                    Flight Efficiency
+                </a>
+            </div>
+            <ul class="nav">
+                <li class="{% if 'index' in segment %} active {% endif %} ">
+                    <a href="/" id = 'Dashboard'>
+                        <i class="tim-icons icon-chart-pie-36"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="{% if 'icons' in segment %} active {% endif %}">
+                    <a href="/icons.html" id = 'Icons'>
+                        <i class="tim-icons icon-atom"></i>
+                        <p>Icons</p>
+                    </a>
+                </li>
+                <li class="{% if 'map' in segment %} active {% endif %}">
+                    <a href="/map.html" id="Maps">
+                        <i class="tim-icons icon-pin" id ='Maps'></i>
+                        <p>Maps</p>
+                    </a>
+                </li>
+                <li class="{% if 'notifications' in segment %} active {% endif %}">
+                    <a href="/notifications.html" id="Notifications">
+                        <i class="tim-icons icon-bell-55" id ='Notifications'></i>
+                        <p>Notifications</p>
+                    </a>
+                </li>
+                <li class="{% if 'user' in segment %} active {% endif %}">
+                    <a href="/user.html" id ='User_Profile'>
+                        <i class="tim-icons icon-single-02"></i>
+                        <p>User Profile</p>
+                    </a>
+                </li>
+                <li class="{% if 'tables' in segment %} active {% endif %}">
+                    <a href="/tables.html" id="Table_List">
+                        <i class="tim-icons icon-puzzle-10"></i>
+                        <p>Table List</p>
+                    </a>
+                </li>
+                <li class="{% if 'typography' in segment %} active {% endif %}">
+                    <a href="/typography.html" id ="Typography">
+                        <i class="tim-icons icon-align-center"></i>
+                        <p>Typography</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/rtl.html">
+                        <i class="tim-icons icon-world"></i>
+                        <p>RTL Support</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'login' %}">
+                        <i class="tim-icons icon-button-power"></i>
+                        <p>Logout</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>

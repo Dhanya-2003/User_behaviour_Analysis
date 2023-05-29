@@ -1,0 +1,12 @@
+type,geometry.type,geometry.coordinates,properties.city,properties.clouds,properties.country,properties.humidity,properties.pressure,properties.temp,properties.feels_like,properties.wind_deg,properties.wind_speed
+Feature,Point,"[15.3215, -4.3246]",Kinshasa,79,CD,74,1009,28.1,31.43,247,0.51
+Feature,Point,"[106.8451, -6.2146]",Jakarta,40,ID,63,1005,32.89,39.89,50,4.12
+Feature,Point,"[168.2227, -77.6554]",McMurdo Station,100,AQ,90,987,-15.64,-22.64,253,3.38
+Feature,Point,"[15.3215, -4.3246]",Kinshasa,79,CD,74,1009,28.1,31.43,247,0.51
+Feature,Point,"[47.5361, -18.9137]",Antananarivo,75,MG,78,1020,20.98,21.17,140,2.06
+Feature,Point,"[70.2167, -49.35]",Port-aux-Francais,9,TF,73,1006,5.45,-0.91,280,15.03
+Feature,Point,"[-25.6667, 37.7333]",Ponta Delgada,20,PT,58,1008,14.4,13.41,280,9.26
+Feature,Point,"[-23.5087, 14.9215]",Praia,75,CV,73,1014,22.3,22.49,20,6.69
+Feature,Point,"[-7.6192, 33.5928]",Casablanca,100,MA,77,1011,17.96,17.82,280,1.79
+Feature,Point,"[-4.0197, 5.3094]",Abidjan,75,CI,94,1011,24.98,25.99,140,3.09
+Feature,Point,"[-119.3399, 76.2346]",Mould Bay,58,CA,92,1032,-23.63,-30.63,328,3.8

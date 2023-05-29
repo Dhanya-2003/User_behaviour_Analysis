@@ -1,0 +1,233 @@
+
+{% extends "layouts/base.html" %}
+
+{% block title %} Tables {% endblock %} 
+
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <div class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card ">
+          <div class="card-header">
+            <h4 class="card-title"> Simple Table</h4>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table tablesorter " id="">
+                <thead class=" text-primary">
+                  <tr>
+                    <th>
+                      Details
+                    </th>
+                    <th>
+                      Validation Status
+                    </th>
+                    <th>
+                      Dep sched
+                    </th>
+                    <th class="text-center">
+                      Flight #
+                    </th>
+                    <th>
+                      Regist
+                    </th>
+                    <th>
+                      AC type IATA
+                    </th>
+                    <th>
+                      Dep/IATA act
+                    </th>
+                    <th>
+                      Arr/IATA act
+                    </th>
+                    <th>
+                      B-Off act
+                    </th>
+                    <th>
+                      B-On act
+                    </th>
+                    <th>
+                      Accel altitude
+                    </th>
+                    <th>
+                      Accel alt date-time
+                    </th>
+                    <th>
+                      Clb zone air dist
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Details
+                    </td>
+                    <td>
+                      W
+                    </td>
+                    <td>
+                      01-01-2012
+                    </td>
+                    <td class="text-center">
+                      AV7198
+                    </td>
+                    <td>
+                      HBAVI
+                    </td>
+                    <td>
+                      320
+                    </td>
+                    <td>
+                      BRU
+                    </td>
+                    <td>
+                      PFO
+                    </td>
+                    <td>
+                      05:22
+                    </td>
+                    <td>
+                      09:04
+                    </td>
+                    <td>
+                      3'331ft
+                    </td>
+                    <td>  
+                      05:32               
+                    </td>
+                    <td> 
+                      257km                
+                    </td>
+                  </tr>
+                  <tr>
+                    
+                  </tr>
+                  <tr>
+                    
+                  </tr>
+                  <tr>
+                    
+                  </tr>
+                  <tr>
+                    
+                  </tr>
+                  <tr>
+                    
+                  </tr>
+                  <tr>
+                    
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="card  card-plain">
+          <div class="card-header">
+            <h4 class="card-title"> Table on Plain Background</h4>
+            <p class="category"> Here is a subtitle for this table</p>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table tablesorter " id="">
+                <thead class=" text-primary">
+                  <tr>
+                    <th>
+                      Name
+                    </th>
+                    <th>
+                      Country
+                    </th>
+                    <th>
+                      Age
+                    </th>
+                    <th class="text-center">
+                      Email
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <!-- <table>
+    <thead>
+      <a href="{% url 'add_rows' %}">Add Rows</a>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <form action="{% url 'add_rows' %}" method="POST">
+        {% csrf_token %}
+        <-- form fields go here -->
+        <!-- <button type="submit">Submit</button>
+    </form> -->
+    
+    <!-- </thead>
+    <tbody>
+      {% for person in people %}
+      <tr>
+        <td>{{ person.name }}</td>
+        <td>{{ person.age }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>  -->
+  
+
+
+
+
+{% endblock content %}
+{% block javascripts %}
+<!-- <script>
+  // function getRandomName() {
+  //   const names = ['John', 'Jane', 'Alice', 'Bob', 'Chris'];
+  //   return names[Math.floor(Math.random() * names.length)];
+  // }
+
+  // function getRandomCountry() {
+  //   const country = ['India', 'Brazil', 'Mexico', 'Dubai', 'China'];
+  //   return country[Math.floor(Math.random() * country.length)];
+  // }
+  
+  // function getRandomAge() {
+  //   return Math.floor(Math.random() * 50) + 20;
+  // }
+  
+  // function getRandomEmail() {
+  //   const domains = ['gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com'];
+  //   const name = getRandomName().toLowerCase();
+  //   const domain = domains[Math.floor(Math.random() * domains.length)];
+  //   return `${name}@${domain}`;
+  // }
+  
+  // fetch('/random-data')
+  //   .then(response => response.json())
+  //   .then(data => {
+      
+  //     const tableBody = document.querySelector('#data-table tbody');
+  //     const newRow = tableBody.insertRow();
+  //     newRow.insertCell().textContent = data.name;
+  //     newRow.insertCell().textContent = data.country;
+  //     newRow.insertCell().textContent = data.age;
+  //     newRow.insertCell().textContent = data.email;
+
+  //   })
+  //   .catch(error => console.error(error)); 
+</script> -->
+<script>
+  ll('tagScreen', "Table Page");
+  console.log("TABLE screen event");
+</script>
+{% endblock javascripts %} 

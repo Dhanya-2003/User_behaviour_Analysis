@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+                <tr>
+                    <td>{{ row.column1 }}</td>
+                    <td>{{ row.column2 }}</td>
+                    <td>{{ row.column3 }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <script>
+        // Use jQuery to initialize DataTables plugin on the table
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <script>
+        ll('tagScreen', "dynamic table page");
+        console.log("DTP screen");
+     </script>
+</body>
+</html>
